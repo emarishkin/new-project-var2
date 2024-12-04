@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+a{
+  color: rgb(0, 0, 0);
+}
 
 .header{
   padding: 10px;
@@ -35,13 +38,38 @@
 .modal button{
   position: absolute;
   bottom: 10px;
-  right: 200px;
+  right: 205px;
 }
 .modal img{
   width: 500px;
   height: 300px;
   border-radius: 18px;
+  position: relative;
 }
 button:active{
   background-color: burlywood;
+}
+.variorA{
+  
+  position: absolute;
+  bottom: 43px;
+  right: 328px;
+}
+.modalInModal{
+  background-color: #666 ;
+  padding: 10px;
+  gap: 3px 0;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 415px;
+  left: 118px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px
+}
+.button-modalA{
+  margin: 0 -182px;
+    padding: 5px;
+    border-radius: 20px;
 }
