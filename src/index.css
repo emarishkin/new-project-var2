@@ -28,16 +28,20 @@ body{
   font-size: 17px;
   border-radius: 5px;
 }
-
-.modal{
+.main{
   position: relative;
+}
+.modal{
+  position: absolute;
   width: 500px;
   height: 400px;
   border-radius: 20px;
     border: 2px solid black;
-    margin: 30px 671px;
+    z-index: 1;
     background-color: #666;
     box-shadow: 0px 0px 14px red;
+    top: 118px;
+    left: 685px;
 }
 .modal button{
   position: absolute;
@@ -92,4 +96,5 @@ button:active{
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
+  
 }
