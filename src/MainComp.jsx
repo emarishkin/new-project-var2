@@ -7,11 +7,16 @@ import { useState } from 'react'
 
 export function MainComp(){
     const [step,setStep] = useState(0)
+    const [correct,setCorrect] =useState(0)
     const question=questions[step]
     
     const clickVAriant= (index)=>{
         console.log(step,index)
         setStep(step+1)
+
+        if(index===question.correct){
+            setCorrect(correct+1)
+        }
     }
 
     return (
@@ -27,8 +32,8 @@ export function MainComp(){
                      <MainVarInfo {...vars[2]} />  */}
                 </div>
                 <div className='quiz'>
-                    <Game question={question} clickVAriant={clickVAriant}/>
-                    <Result/>
+                    {step!=questions.length?<Game question={question} clickVAriant={clickVAriant}/>:<Result correct={correct}/>}
+                    
                 </div>
             </div>
         </section>

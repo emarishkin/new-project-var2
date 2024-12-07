@@ -1,9 +1,13 @@
-export function Result(){
+import { questions } from "../questions";
+
+export function Result({correct}){
     return(
         <div className="result">
-            <img src="" alt="" />
-            <h2>Вы отгадали 5 вопросов</h2>
-            <button>Попробовать снова</button>
+            <img className="result-public" src="./public/звезда.webp" alt="" />
+            <h2>Вы отгадали {correct} ответов из {questions.length}</h2>
+           <a href="/">
+           <button>Попробовать снова</button>
+           </a>
         </div>
     )
 }
