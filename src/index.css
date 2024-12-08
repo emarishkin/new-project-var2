@@ -12,6 +12,11 @@ li{
   list-style: none;
 }
 
+.top{
+  background-image: url('https://cdnn21.img.ria.ru/images/07e6/04/12/1784055381_0:245:3072:1973_1920x1080_80_0_0_2383a1baacf0f10a97f4c0a6a9183443.jpg');
+  background-position: 50% 100%;
+}
+
 .header{
   padding: 10px;
   background-color: #666;
@@ -33,6 +38,8 @@ li{
 }
 .main{
   position: relative;
+  padding-top: 30px;
+  padding-bottom: 1px;
 }
 .modal{
   position: absolute;
@@ -110,9 +117,9 @@ button:active{
   gap: 25px 0;
   margin: 20px auto;
   padding: 15px;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 10px;
-  background-color: #131313;
+  
 }
 .Game li{
   border: 1px solid black;
@@ -125,7 +132,9 @@ button:active{
 }
 .Game h1{
   font-size: 20px;
-  color: aliceblue;
+  font-weight: 700;
+  color: black;
+  
 }
 
 .result{
@@ -148,4 +157,38 @@ button:active{
   border: 3px solid black;
   padding: 3px;
   background-color: burlywood;
+}
+.main-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin-top: 20px;
+ 
+}
+.bottom{
+  background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2049737645096425161/5FE4ACC9C5A29A64774771FE1921C09BC4720F19/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
+ 
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.buttons-itog{
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 0 15px;
+  padding: 15px;
+}
+
+.images-bottom-main{
+  margin: 181px 20px;
+  display: flex;
+  justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.images-bottom-main img{
+  width: 310px;
+  height: 210px;
 }
