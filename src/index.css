@@ -176,9 +176,22 @@ button:active{
 .buttons-itog{
   border: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 0 15px;
   padding: 15px;
+  width: 1480px;
+    height: 85px;
+}
+.buttons-itog button{
+  width: 120px;
+    height: 85px;
+  border-radius: 7px;
+}
+
+.itogi-box{
+  width: 1050px;
+  margin-left: 77px;
+  margin-top: 5px;
 }
 
 .images-bottom-main{
@@ -191,4 +204,9 @@ flex-wrap: wrap;
 .images-bottom-main img{
   width: 310px;
   height: 210px;
+}
+.footer{
+  padding: 40px;
+  text-align: center;
+  background-color: #666;
 }
