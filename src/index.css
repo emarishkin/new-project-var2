@@ -168,10 +168,11 @@ button:active{
 }
 .bottom{
   background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2049737645096425161/5FE4ACC9C5A29A64774771FE1921C09BC4720F19/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
- 
+  height: 712px;
   padding: 10px;
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
 }
 .buttons-itog{
   border: 2px solid black;
@@ -195,10 +196,14 @@ button:active{
 }
 
 .images-bottom-main{
-  margin: 181px 20px;
   display: flex;
-  justify-content: space-between;
-flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 900px;
+    left: 200px;
+    z-index: 2;
+    gap: 66px;
 }
 
 .images-bottom-main img{
@@ -209,4 +214,89 @@ flex-wrap: wrap;
   padding: 40px;
   text-align: center;
   background-color: #666;
+}
+
+@media (width:390px){
+  .top{
+    background-repeat: no-repeat;
+    background-position: 30% 0%;
+  }
+  .main-info li {
+   font-size: 12px;
+  }
+  .Game {
+  width: 300px;
+  }
+  .Game li{
+    width: 270px;
+  }
+  .Game h1{
+    font-size: 13px;
+    text-align: center;
+    }
+  .result {
+     width: 300px; 
+  }
+  .modal {
+    width: 300px;
+    height: 270px;
+   left: 44px;
+  }
+  .modal img {
+    width: 300px;
+    height: 180px;
+  }
+  .variorA {
+    top: 190px;
+   right: 100px;
+  }
+  .modal button {
+   right: 110px;
+  }
+  .modalInModal {
+   left: 14px;
+   top: 291px;
+  }
+  .button-modalA {
+    margin: 0 -97px;
+  }
+  .buttons-itog {
+    font-size: 12px;
+    width: 300px;
+    height: 230px;
+    flex-wrap: wrap;
+  }
+  .buttons-itog button{
+    font-size: 10px;
+    width: 90px;
+        height: 50px;
+  }
+  .itogi-box {
+    width: 300px;
+    margin-left: 0px;
+  }
+.bottom {
+    background-size: 228% 392px;
+  }
+  .bottom-2{
+    background-image: url('https://cdnn21.img.ria.ru/images/07e6/04/12/1784055381_0:245:3072:1973_1920x1080_80_0_0_2383a1baacf0f10a97f4c0a6a9183443.jpg');
+    background-position: 17% 100%;
+    background-size: 1349px 960px;
+  background-repeat: no-repeat;
+  }
+  .images-bottom-main {
+    gap: 0;
+        left: 40px;
+        margin: 0px 40px;
+        top: 1400px;
+        margin: 0;
+}
+  .images-bottom-main img{
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer{
+    margin-top: 700px
+  }
 }

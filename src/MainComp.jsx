@@ -61,6 +61,8 @@ export function MainComp(){
                     </div>
                 </div>
             </div>
+        </section>
+        <section className='bottom-2'>
             <div className='images-bottom-main'>
                <img src="./public/1.jpg" alt="" />
                <img src="./public/2.jpg" alt="" />
